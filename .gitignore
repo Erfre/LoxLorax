@@ -1,0 +1,11 @@
+/dist/*
+!/dist/LoxLorax/
+!/dist/LoxLorax/**
+!/release-artifacts/
+!/release-artifacts/**
+/.build/
+/.runtime/
+*.blend1
+__pycache__/
+*.pyc
+*.log

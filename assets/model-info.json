@@ -1,0 +1,16 @@
+{
+  "vertices": 152490,
+  "triangles": 154352,
+  "materials": 14,
+  "mesh_parts": 22,
+  "groups": [
+    "Body",
+    "Front left leg",
+    "Front right leg",
+    "Rear left leg",
+    "Rear right leg",
+    "Head"
+  ],
+  "height_metres_at_scale_1": 1.0,
+  "format": "LOX2"
+}

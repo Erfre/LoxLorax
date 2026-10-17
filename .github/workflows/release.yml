@@ -1,0 +1,44 @@
+name: Publish tagged release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out tagged source
+        uses: actions/checkout@v4
+
+      - name: Install release validator
+        run: python3 -m pip install --disable-pip-version-check pillow
+
+      - name: Audit repository data
+        run: python3 tools/audit_repository.py
+
+      - name: Validate committed release files
+        run: python3 tools/validate_release.py
+
+      - name: Verify tag matches package version
+        shell: bash
+        run: |
+          package_version="$(python3 -c 'import json; print(json.load(open("manifest.json"))["version_number"])')"
+          test "$GITHUB_REF_NAME" = "v$package_version"
+
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          gh release create "$GITHUB_REF_NAME" \
+            "release-artifacts/LoxLorax-$version-manual.zip" \
+            "release-artifacts/LoxLorax-$version-thunderstore-hexium.zip" \
+            "release-artifacts/SHA256SUMS.txt" \
+            --title "Lox Lorax $version" \
+            --notes-file publishing/RELEASE_NOTES.md \
+            --verify-tag

@@ -1,0 +1,26 @@
+name: Verify repository
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Install release validator
+        run: python3 -m pip install --disable-pip-version-check pillow
+
+      - name: Audit repository data
+        run: python3 tools/audit_repository.py
+
+      - name: Validate release packages
+        run: python3 tools/validate_release.py
