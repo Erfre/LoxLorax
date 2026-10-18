@@ -1,6 +1,6 @@
 {
   "name": "LoxLorax",
-  "version_number": "1.0.7",
+  "version_number": "1.0.8",
   "website_url": "https://github.com/Erfre/LoxLorax",
   "description": "Replaces Valheim lox with an animated orange forest creature and Vile with an undead variant. Includes an F8 live toggle.",
   "dependencies": [

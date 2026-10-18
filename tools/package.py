@@ -2,9 +2,11 @@
 from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED
 import hashlib
+import json
 
 root=Path(__file__).resolve().parents[1]
-out=root/'dist'/'LoxLorax-1.0.7.zip'
+version=json.loads((root/'manifest.json').read_text(encoding='utf-8'))['version_number']
+out=root/'dist'/f'LoxLorax-{version}.zip'
 files={
     'BepInEx/plugins/LoxLorax/LoxLorax.dll':root/'dist/LoxLorax/LoxLorax.dll',
     'BepInEx/plugins/LoxLorax/lorax.llmesh':root/'dist/LoxLorax/lorax.llmesh',

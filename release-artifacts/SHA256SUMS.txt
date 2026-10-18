@@ -1,2 +1,2 @@
-938499d33350725f255ceee13cb0f9affc2b90702fc01b64621a13492285ecc3  LoxLorax-1.0.7-manual.zip
-eca6e88394b2a94104b1b05fb8e03b297e9c68a63cfa549668dcd280a35fe3c3  LoxLorax-1.0.7-thunderstore-hexium.zip
+4a54e9708be76d9c5185f3bb3e0e11fd248c09d70f7261cf035c45d7f7ec59d2  LoxLorax-1.0.8-manual.zip
+3352a43feb938173a489fef61ae619b505101c56882dbc151706a850422d523a  LoxLorax-1.0.8-thunderstore-hexium.zip

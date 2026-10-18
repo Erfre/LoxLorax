@@ -1,4 +1,4 @@
-# Lox Lorax 1.0.7 released
+# Lox Lorax 1.0.8 released
 
 Lox Lorax is a client-side Valheim visual mod that replaces living lox with an animated orange forest creature and Vile with an undead variant. It follows the creatures' native animations, includes grounded Vile paws, a cosmetic sky-launch death, and an F8 live toggle back to vanilla visuals.
 

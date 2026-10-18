@@ -2,6 +2,18 @@
 
 Client-side Valheim visual mod that replaces living lox with an animated orange forest creature and Vile (`Unbjorn`) with an undead variant.
 
+![Living and undead Lox Lorax replacements](https://raw.githubusercontent.com/Erfre/LoxLorax/main/media/cover.png)
+
+## In-game previews
+
+### Living lox replacement
+
+![Living Lox Lorax replacement in Valheim](https://raw.githubusercontent.com/Erfre/LoxLorax/main/media/screenshots/living-in-game.png)
+
+### Undead Vile replacement
+
+![Undead Vile Lorax replacement in Valheim](https://raw.githubusercontent.com/Erfre/LoxLorax/main/media/screenshots/vile-in-game.png)
+
 ## Features
 
 - Original living and undead replacement models.

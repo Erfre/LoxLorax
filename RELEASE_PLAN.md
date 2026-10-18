@@ -1,6 +1,6 @@
 # Lox Lorax public-release plan
 
-This repository is prepared for release **1.0.7**. Local release work is complete. Pushing `main` and `v1.0.7` will trigger `.github/workflows/release.yml`, validate the committed packages, and create the GitHub release with both ZIPs and their checksums.
+This repository is prepared for patch release **1.0.8**. Pushing `main` and `v1.0.8` will trigger `.github/workflows/release.yml`, validate the committed packages, and create the GitHub release with both ZIPs and their checksums.
 
 ## 1. Publisher and rights gate
 
@@ -36,9 +36,9 @@ This repository is prepared for release **1.0.7**. Local release work is complet
 
 ## 4. Publish GitHub release first
 
-- [x] Create local tag `v1.0.7` from the tested release commit.
-- [ ] Push `main` and tag `v1.0.7`.
-- [x] Configure the tag workflow to create a GitHub Release titled `Lox Lorax 1.0.7` using `publishing/RELEASE_NOTES.md`.
+- [x] Create local tag `v1.0.8` from the tested release commit.
+- [ ] Push `main` and tag `v1.0.8`.
+- [x] Configure the tag workflow to create a GitHub Release titled `Lox Lorax 1.0.8` using `publishing/RELEASE_NOTES.md`.
 - [x] Configure the tag workflow to attach both ZIPs and `SHA256SUMS.txt` from `release-artifacts/`.
 - [ ] Confirm the README images render and the release assets download without authentication.
 
@@ -48,10 +48,10 @@ GitHub Releases provide the canonical source and manual-download location. GitHu
 
 ### Thunderstore / r2modman
 
-- [ ] Create or select a Thunderstore team.
-- [ ] Upload `release-artifacts/LoxLorax-1.0.7-thunderstore-hexium.zip` to the Valheim community.
-- [ ] Select client-side and visual/cosmetic categories where available.
-- [ ] Confirm the BepInEx dependency appears.
+- [x] Create or select a Thunderstore team.
+- [ ] Upload `release-artifacts/LoxLorax-1.0.8-thunderstore-hexium.zip` to the Valheim community.
+- [x] Select client-side, visual/cosmetic, enemy, and AI-generated categories.
+- [x] Confirm the BepInEx dependency appears.
 - [ ] Install it through r2modman into a clean profile and launch once.
 
 Thunderstore requires `manifest.json`, `README.md`, and an exact 256×256 `icon.png` at the ZIP root. See <https://wiki.thunderstore.io/mods/creating-a-package>.
@@ -69,7 +69,7 @@ Hexium accepts Thunderstore-compatible packages and assumes BepInExPack for Valh
 
 - [ ] Create the Valheim mod page using `publishing/NEXUS_DESCRIPTION.md`.
 - [ ] Apply accurate visual-replacer and AI-generated-content tags.
-- [ ] Upload `release-artifacts/LoxLorax-1.0.7-manual.zip` as the main file.
+- [ ] Upload `release-artifacts/LoxLorax-1.0.8-manual.zip` as the main file.
 - [ ] Upload `media/cover.png` as the thumbnail and the images from `media/screenshots/` as the gallery.
 - [ ] State that BepInExPack Valheim is required and this is a client-side mod.
 - [ ] Link the GitHub repository and report the tested game/BepInEx versions.

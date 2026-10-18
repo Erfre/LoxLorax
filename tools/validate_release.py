@@ -73,6 +73,11 @@ assert "media/screenshots/living-in-game.png" in readme
 assert "media/screenshots/vile-in-game.png" in readme
 assert "Steam achievement" in readme
 
+package_readme = (ROOT / "publishing" / "PACKAGE_README.md").read_text(encoding="utf-8")
+for image in ("cover.png", "living-in-game.png", "vile-in-game.png"):
+    assert f"https://raw.githubusercontent.com/Erfre/LoxLorax/main/media/" in package_readme
+    assert image in package_readme
+
 workflow = ROOT / ".github" / "workflows" / "release.yml"
 assert workflow.is_file()
 assert (ROOT / ".github" / "workflows" / "verify.yml").is_file()

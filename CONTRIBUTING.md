@@ -39,7 +39,7 @@ The `v*.*.*` GitHub Actions workflow verifies that the tag matches `manifest.jso
 
 ```bash
 git push origin main
-git push origin v1.0.7
+git push origin v1.0.8
 ```
 
 ## Regenerate models

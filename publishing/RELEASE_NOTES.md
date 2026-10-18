@@ -1,6 +1,6 @@
-# Lox Lorax 1.0.7
+# Lox Lorax 1.0.8
 
-Initial public release of the animated Lox Lorax visual replacement for Valheim.
+Adds the missing in-game preview images to the Thunderstore details page. The mod itself is unchanged from 1.0.7.
 
 ## Included
 

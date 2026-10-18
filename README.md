@@ -7,7 +7,7 @@ Lox Lorax is a client-side Valheim visual mod that replaces living lox with an o
 ## Install and play
 
 1. Install [BepInExPack Valheim 5.4.2351](https://thunderstore.io/c/valheim/p/denikson/BepInExPack_Valheim/) through r2modman, Thunderstore Mod Manager, or Gale and create a Valheim profile.
-2. Download `LoxLorax-1.0.7-manual.zip` from the [latest GitHub release](https://github.com/Erfre/LoxLorax/releases/latest).
+2. Download `LoxLorax-1.0.8-manual.zip` from the [latest GitHub release](https://github.com/Erfre/LoxLorax/releases/latest).
 3. Extract the ZIP into that profile's game folder. Keep the `BepInEx/plugins/LoxLorax/` folders from the archive.
 4. Start the modded profile and load a world. Existing and newly spawned lox and Vile creatures are replaced automatically.
 
@@ -37,7 +37,7 @@ Install the package from Thunderstore or Hexium once its listing is published, t
 ### Manual
 
 1. Install BepInExPack Valheim.
-2. Extract `LoxLorax-1.0.7-manual.zip` into the Valheim directory or active mod-manager profile.
+2. Extract `LoxLorax-1.0.8-manual.zip` into the Valheim directory or active mod-manager profile.
 3. Confirm these files are together:
 
    ```text
@@ -87,7 +87,7 @@ Additional front and Blender preview renders are in [`media/screenshots`](media/
 
 ## Validation
 
-Version 1.0.7 was built against Valheim 1.0.20 and BepInExPack 5.4.2351. The release checks include:
+Version 1.0.8 was built against Valheim 1.0.20 and BepInExPack 5.4.2351. The release checks include:
 
 - warning-free C# compilation;
 - independent validation of mesh indices, normals, textures, winding, degenerates, bounds, and four grounded paws;
@@ -106,4 +106,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for local build requirements and [RELEASE
 
 This is an unofficial fan-made mod. It is not affiliated with or endorsed by Iron Gate, Coffee Stain Publishing, Dr. Seuss Enterprises, or their partners. Valheim, The Lorax, and associated names and characters belong to their respective owners. See [DISCLAIMER.md](DISCLAIMER.md) and [LICENSE.md](LICENSE.md).
 
-The code and model-development workflow were created with substantial generative-AI assistance. Platform-specific AI disclosure tags should be applied where required.
+The code and model-development workflow were created with substantial generative-AI assistance. The implementation was produced almost entirely through AI prompting, followed by in-game testing and validation. Platform-specific AI disclosure tags should be applied where required.

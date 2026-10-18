@@ -10,7 +10,7 @@ using UnityEngine.Rendering;
 
 namespace LoxLorax
 {
-    [BepInPlugin(Id, "Lox Lorax", "1.0.7")]
+    [BepInPlugin(Id, "Lox Lorax", "1.0.8")]
     public sealed class Plugin : BaseUnityPlugin
     {
         public const string Id = "com.loxlorax.mod";

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.8
+
+- Added the living and undead in-game preview images to the Thunderstore package page.
+
 ## 1.0.7
 
 - Added an F8 live toggle that restores vanilla visuals or reattaches the replacements immediately.
